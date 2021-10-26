@@ -54,15 +54,15 @@ const extensionConsoleTag = '[extension-2d3dsettings]';
 	// Set controls values from local stored settings
 	const setViewControls = async (id) => {
 		
-		// Set state, to identify the currently watched 2D/3D view
-		ID = id;
-		ID_VIEW = $('#tabbar .tabbar-tab.active').attr('tabid');
-		SETTINGS = getSettings(id);
-		
 		// Set values from local stored settings (if any)
+		SETTINGS = getSettings(id);
 		for (const k of Object.keys(SETTINGS)) {
 			await setViewControlValue(k, SETTINGS[k]);
 		}
+		
+		// Set state, to identify the currently watched 2D/3D view
+		ID = id;
+		ID_VIEW = $('#tabbar .tabbar-tab.active').attr('tabid');
 		
 	};
 	
@@ -79,7 +79,7 @@ const extensionConsoleTag = '[extension-2d3dsettings]';
 	};
 	
 	// Listen controls values changes on the currently watched 2D/3D view, and store new settings
-	$('#attr-main').on('input', '[name^="attr-"]', function() {
+	$('#attr-main').on('change', '[name^="attr-"]', function() {
 		if (ID && ID_VIEW == $('#tabbar .tabbar-tab.active').attr('tabid')) {
 			const value = $(this).val();
 			SETTINGS[this.name] = value;
