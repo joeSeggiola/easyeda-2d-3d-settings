@@ -1,0 +1,11 @@
+{
+	"name": "2D/3D view settings",
+	"description": "Persists 2D/3D view settings for individual PCBs",
+	"version": "0.1",
+	"homepage": "https://github.com/joeSeggiola/easyeda-2d-3d-settings",
+	"author": "joeSeggiola",
+	"icons": {
+		"default": "icon.svg"
+	},
+	"scripts": [ "main.js" ]
+}

@@ -1,0 +1,21 @@
+{
+    "env": {
+        "es6": true,
+        "browser": true,
+        "jquery": true
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "script"
+    },
+    "rules": {
+        "semi": [ "error", "always" ],
+        "no-console": "off",
+        "no-unused-vars": [ "warn" ],
+        "no-empty": [ "error", { "allowEmptyCatch": true } ],
+        "radix": "error"
+    }
+}
