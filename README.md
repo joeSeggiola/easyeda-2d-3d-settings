@@ -37,6 +37,6 @@ If you find a bug or have a suggestion, please open an [issue][7] or send a [pul
 [3]: https://docs.easyeda.com/en/PCB/PCB-View/index.html
 [4]: https://github.com/joeSeggiola/easyeda-2d-3d-settings/archive/refs/heads/main.zip
 [5]: https://easyeda.com/editor
-[6]: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage?retiredLocale=it
+[6]: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 [7]: https://github.com/joeSeggiola/easyeda-2d-3d-settings/issues
 [8]: https://github.com/joeSeggiola/easyeda-2d-3d-settings/pulls
